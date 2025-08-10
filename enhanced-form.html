@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enhanced-form</title>
+</head>
+<body>
+
+<header>
+    <h1>Creative Portfolio Submission</h1>
+</header>
+
+<main>
+    <!-- Well-structured content: list -->
+    <section>
+        <h2>What You Can Submit</h2>
+        <ul>
+            <li>Photography portfolios</li>
+            <li>Design mockups</li>
+            <li>Short films or trailers</li>
+            <li>Artwork and illustrations</li>
+        </ul>
+    </section>
+
+    <!-- Well-structured content: table -->
+    <section>
+        <h2>Submission File Guidelines</h2>
+        <table border="1">
+            <tr>
+                <th>File Type</th>
+                <th>Max Size</th>
+            </tr>
+            <tr>
+                <td>Images (JPG, PNG)</td>
+                <td>10MB</td>
+            </tr>
+            <tr>
+                <td>Video (MP4)</td>
+                <td>50MB</td>
+            </tr>
+            <tr>
+                <td>PDF (Portfolio)</td>
+                <td>20MB</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Well-structured content: media -->
+    <section>
+        <h2>Sample Creative Work</h2>
+        <img src="https://images.pexels.com/photos/7429193/pexels-photo-7429193.jpeg" alt="Sample creative work image" width="480" height="360">
+    </section>
+
+    <!-- Complete HTML5 form -->
+    <section>
+        <h2>Submit Your Creative Portfolio</h2>
+        <form action="#" method="post" autocomplete="on">
+            <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+             </div>
+             <br>
+             <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+             </div>
+             <br>
+             <div>
+            <label for="password">Portfolio Access Password:</label>
+            <input type="password" id="password" name="password" minlength="6" placeholder="At least 6 characters" required>
+             </div>
+             <br>
+             <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+             </div>
+             <br>
+             <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required>
+             </div>
+             <br>
+             <div>
+            <label for="specialty">Creative Specialty:</label>
+            <select id="specialty" name="specialty" required>
+                <option value="">--Select--</option>
+                <option value="photography">Photography</option>
+                <option value="design">Graphic Design</option>
+                <option value="film">Film & Video</option>
+                <option value="art">Illustration & Art</option>
+            </select>
+            </div>
+            <br>
+            <div>
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact-email" name="contact" value="email" required>
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact" value="phone" required>
+            <label for="contact-phone">Phone</label>
+             </div>
+             <br>
+             <div>
+
+            <label for="portfolio-file">Upload Portfolio File:</label>
+            <input type="file" id="portfolio-file" name="portfolio-file" accept=".jpg,.png,.mp4,.pdf">
+              </div>
+              <br>
+              <div>
+            <label for="newsletter">Join Creative Updates Newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" checked readonly>
+              </div>
+              <br>
+              <div>
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Write about yourself and your work" rows="4"></textarea>
+               </div>
+               <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Creative Submission Form</p>
+</footer>
+
+</body>
+</html>
